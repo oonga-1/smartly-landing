@@ -14,7 +14,7 @@ body {
 /* NAVBAR */
 .navbar {
   height: 56px;
-  background: #5a4dff;
+  background: #6741ff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,7 +39,7 @@ body {
 .hero-text h1 {
   font-size: 32px;
   font-weight: 800;
-  color: #5a4dff;
+  color: #6741ff;
   margin-bottom: 6px;
 }
 
@@ -74,7 +74,7 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #5a4dff;
+  background: #6741ff;
   color: white;
   text-align: center;
   padding: 28px 16px;
