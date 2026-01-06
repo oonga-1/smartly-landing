@@ -8,6 +8,7 @@
   --purple: #6741ff;
 }
 
+
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--purple);
@@ -19,44 +20,48 @@ h1, h2 {
 
 /* NAVBAR */
 .navbar {
-  background: white;
-  position: relative; /* REQUIRED for dropdown positioning */
+  height: 64px;
+  background: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
-  height: 44px;
-  max-width: 100%;
+  height: 36px;
 }
 
 .menu-button {
-  color: var(--purple);
-  font-size: 34px;
-  padding: 6px 10px;
-  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
 }
 
 /* DROPDOWN */
 .dropdown {
-  position: absolute; /* FIX: was missing */
-  top: 72px;
+  position: absolute;
+  top: 64px;
   right: 20px;
   background: white;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
 }
 
 .dropdown a {
-  display: block; /* FIX: padding wouldn’t apply correctly */
-  padding: 16px 24px;
-  font-size: 16px;
+  padding: 14px 20px;
+  color: #111;
   text-decoration: none;
-  color: inherit;
 }
 
 /* MAIN WHITE SECTION */
 .main {
   background: white;
-  padding: 72px 20px 64px;
+  padding: 48px 20px;
 }
 
 /* HERO */
@@ -65,34 +70,29 @@ h1, h2 {
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 40px;
   color: var(--purple);
-  letter-spacing: -0.5px;
 }
 
 .hero h2 {
-  font-size: 32px;
-  margin-top: 8px;
-  font-weight: 500;
+  font-size: 28px;
+  margin-top: 6px;
 }
 
 .hero p {
-  font-size: 18px;
-  margin: 20px auto 28px;
-  max-width: 420px;
+  margin: 16px auto 24px;
+  max-width: 360px;
   color: #555;
 }
 
 .appstore {
-  height: 52px;
-  margin-top: 8px;
-  max-width: 100%;
+  height: 46px;
 }
 
 .mockup {
-  margin-top: 48px;
-  max-width: 480px;
+  margin-top: 36px;
   width: 100%;
+  max-width: 420px;
 }
 
 /* FOOTER */
@@ -103,8 +103,8 @@ h1, h2 {
 }
 
 .footer-logo {
-  height: 30px;
-  max-width: 100%;
+  height: 26px;
+  margin-bottom: 12px;
 }
 
 .footer-links {
@@ -114,8 +114,7 @@ h1, h2 {
 }
 
 .footer-links a {
-  font-size: 15px;
-  opacity: 0.9;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
