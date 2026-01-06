@@ -9,55 +9,56 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-    "SF Pro Text", Helvetica, Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--purple);
 }
+h1, h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 
 /* NAVBAR */
 .navbar {
-  height: 64px;
-  background: var(--purple);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  height: 36px;
+  background: white;
 }
 
 .menu-button {
-  font-size: 28px;
-  color: white;
-  background: none;
-  border: none;
+  color: var(--purple);
 }
+
+
+.logo {
+  height: 44px;
+}
+
+.menu-button {
+  font-size: 34px;
+}
+.menu-button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
 
 /* DROPDOWN */
 .dropdown {
-  position: absolute;
-  top: 64px;
+  top: 72px;
   right: 20px;
   background: white;
-  border-radius: 10px;
-  display: none;
-  flex-direction: column;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .dropdown a {
-  padding: 14px 20px;
-  color: #111;
-  text-decoration: none;
+  padding: 16px 24px;
+  font-size: 16px;
 }
+
 
 /* MAIN WHITE SECTION */
 .main {
   background: white;
-  padding: 48px 20px;
+  padding: 72px 20px 64px;
 }
 
 /* HERO */
@@ -66,30 +67,35 @@ body {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 52px;
   color: var(--purple);
+  letter-spacing: -0.5px;
 }
 
 .hero h2 {
-  font-size: 28px;
-  margin-top: 6px;
+  font-size: 32px;
+  margin-top: 8px;
+  font-weight: 500;
 }
 
 .hero p {
-  margin: 16px auto 24px;
-  max-width: 360px;
+  font-size: 18px;
+  margin: 20px auto 28px;
+  max-width: 420px;
   color: #555;
 }
 
+
 .appstore {
-  height: 46px;
+  height: 52px;
+  margin-top: 8px;
 }
 
 .mockup {
-  margin-top: 36px;
-  width: 100%;
-  max-width: 420px;
+  margin-top: 48px;
+  max-width: 480px;
 }
+
 
 /* FOOTER */
 .footer {
@@ -99,9 +105,9 @@ body {
 }
 
 .footer-logo {
-  height: 26px;
-  margin-bottom: 12px;
+  height: 30px;
 }
+
 
 .footer-links {
   display: flex;
@@ -110,7 +116,7 @@ body {
 }
 
 .footer-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
+  opacity: 0.9;
 }
+
