@@ -1,50 +1,40 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* COLORS */
 :root {
   --purple: #6741ff;
 }
 
-/* BASE */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-    "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-/* PURPLE BACKGROUND */
-.purple-bg {
+    "SF Pro Text", Helvetica, Arial, sans-serif;
   background: var(--purple);
 }
 
 /* NAVBAR */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   height: 64px;
   background: var(--purple);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
-  height: 38px;
+  height: 36px;
 }
 
-/* MENU */
 .menu-button {
   font-size: 28px;
   color: white;
   background: none;
   border: none;
-  cursor: pointer;
 }
 
 /* DROPDOWN */
@@ -53,26 +43,19 @@ body {
   top: 64px;
   right: 20px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+  border-radius: 10px;
   display: none;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .dropdown a {
   padding: 14px 20px;
   color: #111;
   text-decoration: none;
-  font-size: 15px;
 }
 
-.dropdown a:hover {
-  background: #f2f2f2;
-}
-
-/* WHITE MAIN SECTION */
-.white-section {
+/* MAIN WHITE SECTION */
+.main {
   background: white;
   padding: 48px 20px;
 }
@@ -83,13 +66,12 @@ body {
 }
 
 .hero h1 {
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 40px;
   color: var(--purple);
 }
 
 .hero h2 {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 6px;
 }
 
@@ -99,17 +81,12 @@ body {
   color: #555;
 }
 
-.app-store-button img {
+.appstore {
   height: 46px;
 }
 
-.hero-image {
+.mockup {
   margin-top: 36px;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image img {
   width: 100%;
   max-width: 420px;
 }
@@ -122,45 +99,18 @@ body {
 }
 
 .footer-logo {
-  height: 28px; /* FIXED */
-  margin-bottom: 14px;
+  height: 26px;
+  margin-bottom: 12px;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
   gap: 18px;
-  margin-bottom: 12px;
 }
 
 .footer-links a {
   color: white;
   text-decoration: none;
   font-size: 14px;
-}
-
-.footer-links a:hover {
-  opacity: 0.85;
-}
-
-.copyright {
-  font-size: 12px;
-  color: white;
-  opacity: 0.85;
-}
-
-/* FADE IN */
-.fade-in {
-  animation: fadeIn 0.7s ease-out both;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
