@@ -12,48 +12,46 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--purple);
 }
+
 h1, h2 {
   font-family: "Space Grotesk", sans-serif;
 }
 
-
 /* NAVBAR */
 .navbar {
   background: white;
+  position: relative; /* REQUIRED for dropdown positioning */
+}
+
+.logo {
+  height: 44px;
+  max-width: 100%;
 }
 
 .menu-button {
   color: var(--purple);
-}
-
-
-.logo {
-  height: 44px;
-}
-
-.menu-button {
   font-size: 34px;
-}
-.menu-button {
   padding: 6px 10px;
   cursor: pointer;
 }
 
-
 /* DROPDOWN */
 .dropdown {
+  position: absolute; /* FIX: was missing */
   top: 72px;
   right: 20px;
   background: white;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown a {
+  display: block; /* FIX: padding wouldn’t apply correctly */
   padding: 16px 24px;
   font-size: 16px;
+  text-decoration: none;
+  color: inherit;
 }
-
 
 /* MAIN WHITE SECTION */
 .main {
@@ -85,17 +83,17 @@ h1, h2 {
   color: #555;
 }
 
-
 .appstore {
   height: 52px;
   margin-top: 8px;
+  max-width: 100%;
 }
 
 .mockup {
   margin-top: 48px;
   max-width: 480px;
+  width: 100%;
 }
-
 
 /* FOOTER */
 .footer {
@@ -106,8 +104,8 @@ h1, h2 {
 
 .footer-logo {
   height: 30px;
+  max-width: 100%;
 }
-
 
 .footer-links {
   display: flex;
@@ -118,5 +116,6 @@ h1, h2 {
 .footer-links a {
   font-size: 15px;
   opacity: 0.9;
+  text-decoration: none;
+  color: white;
 }
-
