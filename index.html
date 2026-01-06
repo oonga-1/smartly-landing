@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smartly AI</title>
+
+  <title>Smartly AI – Scan, Learn, Solve</title>
+  <meta name="description" content="Smartly AI helps students scan homework, learn key concepts, and solve problems instantly." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Smartly AI" />
+  <meta property="og:description" content="Scan homework. Learn concepts. Solve instantly." />
+  <meta property="og:image" content="https://yourdomain.app/assets/og-image.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="stylesheet" href="styles.css" />
   <script defer src="menu.js"></script>
 </head>
-<body>
 
-  <!-- TOP PURPLE SPACER -->
-  <div class="purple-spacer"></div>
+<body class="purple-bg">
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <img src="assets/logo-top.png" alt="Smartly AI Logo" class="logo" />
+    <a href="index.html">
+      <img src="assets/logo-top.png" class="logo" alt="Smartly AI" />
+    </a>
+
     <button class="menu-button" id="menuButton">☰</button>
 
-    <!-- DROPDOWN -->
     <div class="dropdown" id="dropdown">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
@@ -26,39 +37,46 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <main class="hero">
-    <div class="hero-text">
-      <h1>Meet Smartly AI</h1>
-      <h2>Scan, learn, solve</h2>
-      <p>
-        Take a picture, review key concepts, get an answer.
-      </p>
+  <!-- PAGE CONTENT -->
+  <div class="page">
+    <main class="content fade-in">
 
-      <a href="#" class="app-store-button">
-        <img
-          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-          alt="Download on the App Store"
-        />
-      </a>
-    </div>
+      <section class="hero">
+        <h1>Meet Smartly AI</h1>
+        <h2>Scan, learn, solve</h2>
+        <p>Take a picture, review key concepts, get an answer.</p>
 
-    <div class="hero-image">
-      <img src="assets/app-mockups.png" alt="Smartly App Mockups" />
-    </div>
-  </main>
+        <a href="#" class="app-store-button">
+          <img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            alt="Download on the App Store"
+          />
+        </a>
+
+        <div class="hero-image">
+          <img src="assets/app-mockups.png" alt="Smartly App Mockups" />
+        </div>
+      </section>
+
+    </main>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <img src="assets/logo-footer.png" alt="Smartly Logo" class="footer-logo" />
+    <a href="index.html">
+      <img src="assets/logo-footer.png" class="footer-logo" alt="Smartly AI" />
+    </a>
+
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:team.repmax@gmail.com">Contact</a>
+    </div>
 
     <p class="copyright">
-      © Copyright 2026, all rights reserved
+      © 2026 Smartly AI. All rights reserved.
     </p>
   </footer>
-
-  <!-- BOTTOM PURPLE SPACER -->
-  <div class="purple-spacer"></div>
 
 </body>
 </html>
