@@ -8,14 +8,10 @@
   --purple: #6741ff;
 }
 
-
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", Helvetica, Arial, sans-serif;
   background: var(--purple);
-}
-
-h1, h2 {
-  font-family: "Space Grotesk", sans-serif;
 }
 
 /* NAVBAR */
