@@ -109,6 +109,11 @@ body {
   gap: 18px;
 }
 
+.footer .copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
 .footer-links a {
   color: white;
   text-decoration: none;
