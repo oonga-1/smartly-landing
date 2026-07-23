@@ -6,6 +6,32 @@
   <title>Privacy Policy – Smartly Labs</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="menu.js"></script>
+  <style>
+    /* Anychef palette */
+    :root {
+      --ac-bg: #F3F4F6;
+      --ac-surface: #FFFFFF;
+      --ac-ink: #0B0B0D;
+      --ac-ink-soft: #585B62;
+      --ac-ink-faint: #9498A0;
+      --ac-brand: #F4303B;
+      --ac-hairline: #DDDFE5;
+    }
+    body { background: var(--ac-bg); color: var(--ac-ink);
+           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .main, .hero { background: var(--ac-bg); }
+    .hero h1 { color: var(--ac-ink); }
+    .policy { margin-top: 32px; max-width: 700px; text-align: left; line-height: 1.7;
+              background: var(--ac-surface); border: 1px solid var(--ac-hairline);
+              border-radius: 22px; padding: 40px 36px; }
+    .policy h2 { color: var(--ac-ink); font-size: 20px; margin: 28px 0 10px; }
+    .policy h2.app-title { font-size: 28px; margin-top: 0; margin-bottom: 4px; }
+    .policy p, .policy li { color: var(--ac-ink-soft); }
+    .policy strong { color: var(--ac-ink); }
+    .policy a { color: var(--ac-brand); }
+    .policy hr { margin: 40px 0; border: none; border-top: 1px solid var(--ac-hairline); }
+    .muted { color: var(--ac-ink-faint) !important; }
+  </style>
 </head>
 <body>
 <header class="navbar">
@@ -23,382 +49,90 @@
 <main class="main">
   <section class="hero">
     <h1>Privacy Policy</h1>
-    <p style="margin-top: 8px; color: #888;">Effective Date: April 16, 2026</p>
+    <p class="muted" style="margin-top: 8px;">Effective Date: July 23, 2026</p>
 
-    <div style="margin-top: 32px; max-width: 700px; text-align: left; line-height: 1.7;">
+    <div class="policy">
 
       <p>
-        Smartly Labs LLC ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy describes the data practices for each app published by Smartly Labs LLC. Data collection and usage may differ by app, as outlined below.
+        Smartly Labs LLC ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy describes the data practices of Anychef, published by Smartly Labs LLC.
       </p>
 
-      <!-- ───────────────────────────────────────────── -->
-      <h2 style="margin-top: 40px; margin-bottom: 4px; font-size: 28px;">Smartly AI</h2>
-      <p style="color: #888; margin-bottom: 20px;">Homework assistance app</p>
+      <hr />
 
-      <h2 style="margin-top: 24px;">Age Requirement</h2>
-      <p>Smartly AI is intended for users aged 13 and older.</p>
+      <h2 class="app-title">Anychef</h2>
+      <p class="muted" style="margin-bottom: 20px;">Pantry-to-recipe cooking app</p>
 
-      <h2 style="margin-top: 24px;">Information We Collect</h2>
-      <p><strong>Device Identifier:</strong> Used to prevent abuse. Not linked to personal identity.</p>
-      <p><strong>User Reports:</strong> Submitted questions may be uploaded for review.</p>
-      <p><strong>Local Data:</strong> Stored only on your device unless reported.</p>
-
-      <h2 style="margin-top: 24px;">Usage</h2>
-      <p>We use this data to maintain service quality and improve responses.</p>
-
-      <h2 style="margin-top: 24px;">Third-Party Services</h2>
-      <p>Questions are processed by third-party AI services.</p>
-
-      <h2 style="margin-top: 24px;">Analytics & Ads</h2>
-      <p>No analytics or ads.</p>
-
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0;" />
-
-      <h2 style="font-size: 28px;">STOPLOSS</h2>
-      <p style="color: #888;">Quit gambling app</p>
-
-      <h2 style="margin-top: 24px;">Data Collection</h2>
-      <p>No data is collected. Everything stays on your device.</p>
-
-      <h2 style="margin-top: 24px;">Third-Party Services</h2>
-      <p>No third-party services are used.</p>
-
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0;" />
-
-      <h2 style="margin-top: 0; margin-bottom: 4px; font-size: 28px;">Outspoken</h2>
-      <p style="color: #888; margin-bottom: 20px;">Speaking confidence &amp; voice coaching app</p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Information We Collect</h2>
+      <h2>Information We Collect</h2>
       <p>
         <strong>Device Identifier:</strong> We generate a random, anonymous identifier stored locally on your device to manage rate limits and app functionality. This identifier is not linked to your name, email, Apple ID, or any personally identifiable information.
       </p>
       <p style="margin-top: 12px;">
-        <strong>Audio &amp; Video Recordings:</strong> When you use the recording feature, your device captures audio (and video, if you record video). Your video never leaves your device. To generate your analysis, your audio recording is sent to a third-party AI service (see &quot;How We Analyze Your Speech&quot; below). We do not store your recordings on our servers, and they are never used for any purpose other than producing your analysis.
+        <strong>Pantry Photos:</strong> When you use the pantry scanner, the photo you take (or choose from your library) is sent to a third-party AI service to detect the food items in it. Photos are processed in real time, are not stored on any server, and are discarded after the ingredients are returned. Only the framed area you choose to scan is sent.
       </p>
       <p style="margin-top: 12px;">
-        <strong>Speech Transcripts:</strong> Your device transcribes your speech, and the resulting text transcript is sent — together with your audio recording — to a third-party AI service for analysis. Your video is never sent.
+        <strong>Ingredients and Preferences:</strong> To create recipes for you, we send your pantry ingredient list and the preferences you set during onboarding (such as dietary style, allergies and foods to avoid, cooking goals, household size, taste ratings, and any custom requests you type) to a third-party AI service. This information is processed in real time to generate your recipes and is not stored on any server.
       </p>
       <p style="margin-top: 12px;">
-        <strong>Local Data:</strong> Your scores, progress, streaks, recordings, and preferences are stored locally on your device only. We do not upload or have access to this data.
+        <strong>Cooking Assistant Messages:</strong> Questions you type to the in-recipe cooking assistant are sent, along with the recipe you are cooking, to the same third-party AI service to generate answers. Messages are processed in real time and are not stored on any server after the response is returned.
       </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">How We Analyze Your Speech</h2>
+      <p style="margin-top: 12px;">
+        <strong>Voice Input:</strong> When you add ingredients by voice, your speech is transcribed using Apple's speech recognition and the resulting text is processed on your device. Your voice audio is never sent to us or to our AI provider.
+      </p>
+      <p style="margin-top: 12px;">
+        <strong>Local Data:</strong> Your pantry, generated and saved recipes, meal plans, grocery lists, preferences, and usage counters are stored locally on your device only. We do not upload or have access to this data.
+      </p>
+
+      <h2>How We Generate Your Recipes</h2>
       <p>
-        To generate your speaking score and feedback, Outspoken sends your audio recording and its text transcript to a third-party AI processing service. Your video never leaves your device, and we send no personal information. The service processes your audio and transcript to return a score and feedback. We do not store your recordings or transcripts on any server, your data is never sold or used for advertising, and the third-party service does not use your data to train AI models.
+        Anychef sends your ingredient list, your preferences (including any dietary restrictions you enter), your pantry photos when you scan, and your assistant messages to a third-party AI processing service through our secure server. The service processes this information in real time to return recipes, detected ingredients, or answers. We do not store this information on any server, it is never sold or used for advertising, and the third-party service does not use it to train AI models. The only identifier attached to these requests is the random device identifier described above.
       </p>
-      <p style="margin-top: 12px;">
-        To power the AI conversation practice feature, your typed messages are sent to the same third-party AI service to generate responses. These messages are processed in real time and are not stored on any server after the conversation ends.
-      </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">What We Do Not Collect</h2>
+
+      <h2>What We Do Not Collect</h2>
       <p>
         We do not collect your name, email address, phone number, location, contacts, or any other personally identifiable information. We do not create user accounts. We do not track you across other apps or websites. We do not sell, share, or monetize your data in any way.
       </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Third-Party Services</h2>
+
+      <h2>Third-Party Services</h2>
       <p>
-        Outspoken uses a third-party AI service to analyze your speech and generate conversation responses. This service receives your audio recording and text transcript (and, in conversation practice, your typed messages), processes them in real time, and does not retain them. Your video and personal information are never shared with any third party.
+        Anychef uses a third-party AI service to generate recipes, detect ingredients in photos, and answer cooking questions. This service receives the data described above, processes it in real time, and does not retain it.
       </p>
       <p style="margin-top: 12px;">
-        Outspoken uses Apple's StoreKit framework to process subscriptions. Payment information is handled entirely by Apple and is never accessible to us.
+        Anychef uses Apple's StoreKit framework to process subscriptions. Payment information is handled entirely by Apple and is never accessible to us.
       </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Data Storage and Security</h2>
+
+      <h2>Notifications</h2>
       <p>
-        Your recordings, scores, progress, and preferences are stored locally on your device. Audio sent for analysis is transmitted securely, processed in real time, and not retained by the third-party service. If you delete the app, all locally stored data is permanently removed.
+        If you start a free trial, Anychef can schedule a local reminder on your device before the trial ends. This notification is created and delivered entirely on your device; no notification data is sent to us.
       </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Analytics and Advertising</h2>
+
+      <h2>Data Storage and Security</h2>
+      <p>
+        Your pantry, recipes, meal plans, grocery lists, and preferences are stored locally on your device. Data sent for AI processing is transmitted securely over HTTPS, processed in real time, and not retained by the third-party service. If you delete the app, all locally stored data is permanently removed.
+      </p>
+
+      <h2>Analytics and Advertising</h2>
       <p>
         We do not use third-party analytics tools. We do not display advertisements in this app.
       </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Age Requirement</h2>
+
+      <h2>Age Requirement</h2>
       <p>
-        Outspoken is intended for users of all ages. We do not collect any personally identifiable information from any user, including children under 13.
+        Anychef is intended for users of all ages. We do not collect any personally identifiable information from any user, including children under 13.
       </p>
-      
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Your Choices</h2>
+
+      <h2>Your Choices</h2>
       <p>
         Since we do not collect personally identifiable data or maintain user accounts, there is no personal data to access, modify, or delete on our end. All data lives on your device and can be removed by deleting the app.
       </p>
 
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0;" />
-
-      <h2 style="font-size: 28px;">Photopin</h2>
-      <p style="color: #888;">Photo mapping & social sharing app</p>
-
-      <h2 style="margin-top: 24px;">Information We Collect</h2>
-
-      <p>
-        <strong>Account Information:</strong> When you sign in using Apple or Google, we collect your name, email address, a unique user ID, and account creation timestamp.
-      </p>
-
-      <p>
-        <strong>Photos:</strong> Images you upload are stored on our servers and associated with your account.
-      </p>
-
-      <p>
-        <strong>Location Data:</strong> We collect and store geographic coordinates associated with uploaded photos to display them on a map.
-      </p>
-
-      <p>
-        <strong>Group Data:</strong> We store group membership and connections between users to enable shared maps and photo visibility.
-      </p>
-
-      <h2 style="margin-top: 24px;">How We Use Your Information</h2>
-      <ul>
-        <li>Create and manage your account</li>
-        <li>Display photos on a map</li>
-        <li>Enable group sharing features</li>
-        <li>Provide core app functionality</li>
-      </ul>
-
-      <h2 style="margin-top: 24px;">Third-Party Services</h2>
-      <p>
-        We use Supabase to store and manage user data, including account information, images, and location data.
-      </p>
-      <p>
-        Apple and Google authentication services are used for login and provide basic account details.
-      </p>
-
-      <h2 style="margin-top: 24px;">Data Sharing</h2>
-      <p>
-        Your photos and associated location data may be visible to other users within groups you join. We do not sell your data.
-      </p>
-
-      <h2 style="margin-top: 24px;">Data Retention</h2>
-      <p>
-        Data is retained while your account is active. You may request deletion at any time.
-      </p>
-
-      <h2 style="margin-top: 24px;">Your Choices</h2>
-      <p>
-        To delete your account and data, contact us at the email below.
-      </p>
-
-      <h2 style="margin-top: 24px;">Age Requirement</h2>
-      <p>
-        Photopin is intended for users aged 13 and older.
-      </p>
-
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0;" />
+      <hr />
 
       <h2>Changes to This Policy</h2>
       <p>
-        We may update this policy from time to time. Continued use of our apps constitutes acceptance.
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.
       </p>
 
-      <h2 style="margin-top: 24px;">Contact Us</h2>
-      <p>
-        get.smartlyai@gmail.com
-      </p>
-
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <a href="index.html">
-    <img src="assets/logo-footer.png" class="footer-logo" />
-  </a>
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Use</a>
-    <a href="mailto:get.smartlyai@gmail.com">Contact</a>
-  </div>
-  <p class="copyright">© 2026 Smartly Labs LLC</p>
-</footer>
-</body>
-</html>      <p>
-        Device identifiers and reported questions are stored securely on third-party infrastructure. We implement reasonable security measures to protect this information from unauthorized access.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Analytics and Advertising</h2>
-      <p>
-        We do not use third-party analytics tools. We do not display advertisements in this app.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Your Choices</h2>
-      <p>
-        Since we collect minimal data that is not personally identifiable, we do not offer a data deletion process. Your local history can be cleared directly from your device at any time.
-      </p>
-
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0; border: none; border-top: 1px solid #e5e5e5;" />
-
-      <h2 style="margin-top: 0; margin-bottom: 4px; font-size: 28px;">STOPLOSS</h2>
-      <p style="color: #888; margin-bottom: 20px;">Quit gambling app</p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">No Data Collection</h2>
-      <p>
-        STOPLOSS does not collect, transmit, store, or share any personal information or usage data. Everything you enter or track within the app stays entirely on your device and is never sent to us or any third party.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Local Storage Only</h2>
-      <p>
-        All data you create within STOPLOSS — including your progress, goals, and records — is stored locally on your device. We have no access to this data at any time. If you delete the app, all locally stored data is permanently removed.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Third-Party Services</h2>
-      <p>
-        STOPLOSS does not integrate any third-party analytics, advertising networks, or data-processing services. No data is shared with any outside parties.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Analytics and Advertising</h2>
-      <p>
-        We do not use any third-party analytics tools. We do not display advertisements in this app.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Age Requirement</h2>
-      <p>
-        STOPLOSS is intended for users aged 13 and older. Because we do not collect any data, there is no risk of inadvertently collecting information from children. If you are under 13, please do not use this app.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Your Choices</h2>
-      <p>
-        Because STOPLOSS collects no data, there is nothing to request, export, or delete on our end. Your local data can be cleared at any time by deleting the app from your device.
-      </p>
-
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0; border: none; border-top: 1px solid #e5e5e5;" />
-
-      <h2 style="margin-top: 0; margin-bottom: 4px; font-size: 28px;">Outspoken</h2>
-      <p style="color: #888; margin-bottom: 20px;">Speaking confidence & voice coaching app</p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Information We Collect</h2>
-      <p>
-        <strong>Device Identifier:</strong> We generate a random, anonymous identifier stored locally on your device to manage rate limits and app functionality. This identifier is not linked to your name, email, Apple ID, or any personally identifiable information.
-      </p>
-      <p style="margin-top: 12px;">
-        <strong>Audio &amp; Video Recordings:</strong> When you use the recording feature, your device captures audio and video. These recordings are stored only on your device and are never uploaded to our servers or shared with any third party.
-      </p>
-      <p style="margin-top: 12px;">
-        <strong>Speech Transcripts:</strong> Your device transcribes your speech locally. The resulting text transcript is sent to a third-party AI service for analysis (see "How We Analyze Your Speech" below). Only the text transcript is sent — never your audio or video.
-      </p>
-      <p style="margin-top: 12px;">
-        <strong>Local Data:</strong> Your scores, progress, streaks, recordings, and preferences are stored locally on your device only. We do not upload or have access to this data.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">How We Analyze Your Speech</h2>
-      <p>
-        To generate your speaking score, Outspoken sends the text transcript of your speech to a third-party AI processing service. Only the text transcript is sent — never your audio, video, or any personal information. The third-party service processes the transcript to return a score and feedback. We do not store your transcripts on any server. The third-party service does not use your data to train AI models.
-      </p>
-      <p style="margin-top: 12px;">
-        To power the AI conversation practice feature, your typed messages are sent to the same third-party AI service to generate responses. These messages are processed in real time and are not stored on any server after the conversation ends.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">What We Do Not Collect</h2>
-      <p>
-        We do not collect your name, email address, phone number, location, contacts, or any other personally identifiable information. We do not create user accounts. We do not track you across other apps or websites. We do not sell, share, or monetize your data in any way.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Third-Party Services</h2>
-      <p>
-        Outspoken uses a third-party AI service to analyze speech transcripts and generate conversation responses. This service receives only text data, processes it in real time, and does not retain it. No audio, video, or personal information is shared with any third party.
-      </p>
-      <p style="margin-top: 12px;">
-        Outspoken uses Apple's StoreKit framework to process subscriptions. Payment information is handled entirely by Apple and is never accessible to us.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Data Storage and Security</h2>
-      <p>
-        All app data — recordings, scores, progress, and preferences — is stored locally on your device. If you delete the app, all data is permanently removed.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Analytics and Advertising</h2>
-      <p>
-        We do not use third-party analytics tools. We do not display advertisements in this app.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Age Requirement</h2>
-      <p>
-        Outspoken is intended for users of all ages. We do not collect any personally identifiable information from any user, including children under 13.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Your Choices</h2>
-      <p>
-        Since we do not collect personally identifiable data or maintain user accounts, there is no personal data to access, modify, or delete on our end. All data lives on your device and can be removed by deleting the app.
-      </p>
-<!-- ───────────────────────────────────────────── -->
-<hr style="margin: 48px 0; border: none; border-top: 1px solid #e5e5e5;" />
-
-<h2 style="margin-top: 0; margin-bottom: 4px; font-size: 28px;">Photopin</h2>
-<p style="color: #888; margin-bottom: 20px;">Photo mapping & social sharing app</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Information We Collect</h2>
-<p>
-  <strong>Account Information:</strong> When you sign in using Apple or Google, we collect and store your name, email address, a unique user ID, and your account creation timestamp. This information is used to create and manage your account.
-</p>
-
-<p style="margin-top: 12px;">
-  <strong>Photos:</strong> When you upload images, they are stored on our servers and associated with your account.
-</p>
-
-<p style="margin-top: 12px;">
-  <strong>Location Data:</strong> We collect and store the geographic coordinates associated with photos you upload in order to display them on a map. This data is tied to your account and is required for core app functionality.
-</p>
-
-<p style="margin-top: 12px;">
-  <strong>Group Data:</strong> If you join or create groups, we store group membership and related data so you can view shared photos and maps with other users.
-</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">How We Use Your Information</h2>
-<p>
-  We use your information to:
-</p>
-<ul style="padding-left: 20px;">
-  <li>Create and manage your account</li>
-  <li>Store and display your photos on a map</li>
-  <li>Enable group features and sharing with other users</li>
-  <li>Provide core app functionality</li>
-</ul>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Third-Party Services</h2>
-<p>
-  Photopin uses Supabase, a third-party backend service, to securely store and manage user data including account information, images, location coordinates, and group data.
-</p>
-<p style="margin-top: 12px;">
-  Photopin also uses Apple and Google authentication services for account sign-in. These services provide basic account information such as your name and email address.
-</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Data Storage and Security</h2>
-<p>
-  All user data is stored securely on third-party infrastructure (Supabase). We take reasonable measures to protect your information from unauthorized access, loss, or misuse.
-</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Data Sharing</h2>
-<p>
-  Your photos and associated location data may be visible to other users within groups you join or create. We do not sell your personal data to third parties.
-</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Data Retention</h2>
-<p>
-  We retain your data for as long as your account is active. You may request deletion of your account and associated data by contacting us.
-</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Your Choices</h2>
-<p>
-  You may request to delete your account and associated data at any time by contacting us at the email listed below.
-</p>
-
-<h2 style="margin-top: 24px; margin-bottom: 12px;">Age Requirement</h2>
-<p>
-  Photopin is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13.
-</p>
-      <!-- ───────────────────────────────────────────── -->
-      <hr style="margin: 48px 0; border: none; border-top: 1px solid #e5e5e5;" />
-
-      <h2 style="margin-top: 0; margin-bottom: 12px;">Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of any of our apps after changes constitutes acceptance of the revised policy.
-      </p>
-
-      <h2 style="margin-top: 24px; margin-bottom: 12px;">Contact Us</h2>
+      <h2>Contact Us</h2>
       <p>
         If you have any questions or concerns about this Privacy Policy, please contact us at:
         <a href="mailto:get.smartlyai@gmail.com">get.smartlyai@gmail.com</a>
@@ -407,6 +141,7 @@
     </div>
   </section>
 </main>
+
 <footer class="footer">
   <a href="index.html">
     <img src="assets/logo-footer.png" class="footer-logo" />
