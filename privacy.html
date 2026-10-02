@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="menu.js"></script>
   <style>
-    /* Anychef palette */
+    /* Policy palette */
     :root {
       --ac-bg: #F3F4F6;
       --ac-surface: #FFFFFF;
       --ac-ink: #0B0B0D;
       --ac-ink-soft: #585B62;
       --ac-ink-faint: #9498A0;
-      --ac-brand: #F4303B;
+      --ac-brand: #2F6FEB;
       --ac-hairline: #DDDFE5;
     }
     body { background: var(--ac-bg); color: var(--ac-ink);
@@ -30,6 +30,7 @@
     .policy strong { color: var(--ac-ink); }
     .policy a { color: var(--ac-brand); }
     .policy hr { margin: 40px 0; border: none; border-top: 1px solid var(--ac-hairline); }
+    .policy .toc a { display: inline-block; margin-right: 18px; }
     .muted { color: var(--ac-ink-faint) !important; }
   </style>
 </head>
@@ -49,134 +50,172 @@
 <main class="main">
   <section class="hero">
     <h1>Privacy Policy</h1>
-    <p class="muted" style="margin-top: 8px;">Effective Date: August 18, 2026</p>
+    <p class="muted" style="margin-top: 8px;">Effective Date: October 2, 2026</p>
 
     <div class="policy">
 
       <p>
-            Smartly Labs LLC ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy describes the data practices of Anychef, published by Smartly Labs LLC.
-          </p>
+        Smartly Labs LLC ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy describes the data practices of each app published by Smartly Labs LLC. What each app collects is different, so each app has its own section below.
+      </p>
+      <p class="toc" style="margin-top:12px;">
+        <a href="#smartly">Smartly AI</a>
+        <a href="#photopin">Photopin</a>
+        <a href="#anychef">Anychef</a>
+      </p>
 
-          <hr />
+      <!-- ───────────────────────────────────────────── -->
+      <hr />
 
-          <h2 class="app-title">Anychef</h2>
-          <p class="muted" style="margin-bottom:20px;">Pantry-to-recipe cooking app</p>
+      <h2 class="app-title" id="smartly">Smartly AI</h2>
+      <p class="muted" style="margin-bottom:20px;">AI homework helper</p>
 
-          <h2>The Short Version</h2>
-          <p>
-            Anychef has no accounts and never asks for your name, email, or phone number. Your recipes, pantry, and plans live on your device. To generate recipes we send what you give us — ingredients, preferences, photos of your pantry, questions you type, links you paste — to an AI service through our own server, in real time. That content is not kept afterwards. We do keep a small number of anonymous counters (described below) so we can enforce rate limits and pay creators for the recipe codes they share.
-          </p>
+      <h2>The Short Version</h2>
+      <p>
+        Smartly AI has no accounts and never asks for your name, email, or phone number. To solve a question, we send the photo or text of that question to an AI service through our own server. Your history, streaks, and settings stay on your device. The app also includes Meta and TikTok software that tells those companies when the app is installed, opened, or a free trial starts, so we can measure our ads. It never sends them your questions or photos.
+      </p>
 
-          <h2>Information We Collect</h2>
-          <p>
-            <strong>Device Identifier:</strong> We generate a random, anonymous identifier stored locally on your device to manage rate limits and app functionality. This identifier is not linked to your name, email, Apple ID, or any personally identifiable information.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Pantry Photos:</strong> When you use the pantry scanner, the photo you take (or choose from your library) is sent to a third-party AI service to detect the food items in it. Photos are processed in real time, are not retained after the response is returned, and only the framed area you choose to scan is sent.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Ingredients and Preferences:</strong> To create recipes for you, we send your pantry ingredient list and the preferences you set during onboarding (such as dietary style, allergies and foods to avoid, cooking goals, household size, taste ratings, and any custom requests you type) to a third-party AI service. This information is processed in real time to generate your recipes and is not retained afterwards.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Cooking Assistant Messages:</strong> Questions you type to the in-recipe cooking assistant are sent, along with the recipe you are cooking, to the same third-party AI service to generate answers. Messages are processed in real time and are not retained after the response is returned.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Recipe Imports:</strong> When you import a recipe by pasting a link, the link is sent to our server, which fetches the publicly available content at that address and sends its text to the AI service to be turned into a recipe card. When you paste recipe text or a caption instead, that text is sent directly to the AI service. In both cases the content is processed in real time and is not retained. We only fetch pages you explicitly paste.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Clipboard Check:</strong> On the first launch after you install Anychef, the app checks whether your clipboard appears to contain a web link, so it can offer to import a recipe you were just looking at. iOS asks for your permission before the app can read the clipboard, and the check runs only once. If you decline, or if the clipboard does not contain a recipe link, nothing is read and nothing is sent anywhere.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Recipe Codes:</strong> When you redeem a creator's recipe code, the code and your random device identifier are sent to our server so the recipe can be delivered and the redemption counted for that creator. See "What We Keep on Our Servers" below for how long that record lasts.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Voice Input:</strong> When you add ingredients by voice, your speech is transcribed by Apple's speech recognition. Depending on your device and language settings, Apple may process the audio on its servers under Apple's own privacy policy. The resulting text is handled like any other ingredient list. Your voice audio is never sent to us or to our AI provider.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Recipe Images:</strong> Some recipe photos are generated by an AI image service. To create one, the recipe's title and short description are sent to that service. No personal information is included.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Network Information:</strong> Like any internet service, our server receives the IP address your request comes from. We use it only to enforce rate limits and prevent abuse, we do not use it to determine your location, and we do not combine it with anything else about you.
-          </p>
-          <p style="margin-top:12px;">
-            <strong>Local Data:</strong> Your pantry, generated and saved recipes, meal plans, grocery lists, preferences, and usage counters are stored locally on your device only. We do not upload or have access to this data.
-          </p>
+      <h2>Information We Collect</h2>
+      <p>
+        <strong>Homework Photos and Questions:</strong> When you scan or upload a question, the area of the photo you crop is sent to a third-party AI service (OpenAI) through our server to read the question and generate an answer, step-by-step explanation, and practice questions. Questions you type, follow-up questions you ask, and the grade level you choose are sent the same way. This content is used only to answer your question.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>App Identifier:</strong> On first launch, the app creates a random identifier and stores it on your device. It is sent with each question so we can enforce usage limits and prevent abuse. It is not linked to your name, email, Apple ID, or the advertising identifier.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Reports:</strong> If you report an answer, we receive and keep the report so we can review it and improve answers. A report includes the report type, the question text, the AI's answer and steps, your grade level, the app version, your device model (for example, "iPhone 15"), and your iOS version. Reports do not include your photo or your app identifier.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Local Data:</strong> Your question history, streaks, badges, credits, and settings are stored only on your device.
+      </p>
 
-          <h2>How We Generate Your Recipes</h2>
-          <p>
-            Anychef sends your ingredient list, your preferences (including any dietary restrictions you enter), your pantry photos when you scan, the content of links you paste, and your assistant messages to a third-party AI processing service through our secure server. The service processes this information in real time to return recipes, detected ingredients, or answers. It is never sold, never used for advertising, and the third-party service does not use it to train AI models. The only identifier attached to these requests is the random device identifier described above.
-          </p>
+      <h2>Advertising Measurement</h2>
+      <p>
+        Smartly AI includes the Meta (Facebook) SDK and the TikTok Business SDK. We use them only to find out which of our ads lead to installs and subscriptions. They receive app events such as installs, app opens, free-trial starts, and in-app purchases, along with technical information such as your device model, iOS version, app version, and IP address. Meta and TikTok handle this information under their own privacy policies.
+      </p>
+      <p style="margin-top:12px;">
+        Smartly AI does not ask for permission to track you, and it does not collect your device's advertising identifier (IDFA). We never send your homework photos, questions, or answers to Meta or TikTok. Smartly AI does not show ads.
+      </p>
 
-          <h2>What We Keep on Our Servers</h2>
-          <p>
-            We do not keep the content you send. Photos, ingredient lists, preferences, assistant messages, and imported recipe text are processed in real time and discarded once the response is returned. We are not able to look up what any user has cooked, scanned, or asked.
-          </p>
-          <p style="margin-top:12px;">
-            We do keep a small set of anonymous counters, none of which contain your content or identify you personally:
-          </p>
-          <ul style="margin-top:8px;">
-            <li><strong>Usage counters:</strong> a count of requests made by your random device identifier, so we can enforce hourly and monthly limits. These expire automatically — within one hour for hourly counters and roughly one month for monthly counters.</li>
-            <li><strong>Rate-limit counters by IP address:</strong> a count of requests from a given IP address, kept for one hour and then deleted automatically, to stop automated abuse of our service.</li>
-            <li><strong>Recipe code attribution:</strong> when you redeem a creator's code, we store a record that a device with your random identifier redeemed that code, so each creator can be credited and paid once per install rather than once per tap. This record contains only the code and the random identifier, and it expires automatically after one year.</li>
-          </ul>
+      <h2>Third-Party Services</h2>
+      <ul style="margin-top:8px;">
+        <li><strong>OpenAI</strong> answers your questions. It receives the question content described above through our server.</li>
+        <li><strong>Cloudflare</strong> hosts our server, which forwards your questions and receives reports.</li>
+        <li><strong>Meta and TikTok</strong> handle advertising measurement, as described above.</li>
+        <li><strong>jsDelivr</strong> serves the math formatting library (KaTeX) used to display equations. Like any website, it receives your IP address when it loads.</li>
+        <li><strong>Apple</strong> processes subscriptions through StoreKit. We never see your payment information.</li>
+      </ul>
 
-          <h2>What We Do Not Collect</h2>
-          <p>
-            We do not collect your name, email address, phone number, precise location, contacts, or any other personally identifiable information. We do not create user accounts. We do not track you across other apps or websites. We do not sell, share, or monetize your data in any way.
-          </p>
+      <h2>Notifications</h2>
+      <p>
+        If you start a free trial and allow notifications, Smartly AI schedules a reminder on your device before the trial ends. The reminder is created and delivered on your device. No notification data is sent to us.
+      </p>
 
-          <h2>Third-Party Services</h2>
-          <p>
-            Anychef uses a third-party AI service to generate recipes, detect ingredients in photos, answer cooking questions, turn imported links into recipe cards, and generate recipe images. This service receives the data described above, processes it in real time, and does not retain it or use it for model training.
-          </p>
-          <p style="margin-top:12px;">
-            Our server runs on Cloudflare, which processes requests on our behalf and stores the anonymous counters described above.
-          </p>
-          <p style="margin-top:12px;">
-            Anychef uses Apple's StoreKit framework to process subscriptions. Payment information is handled entirely by Apple and is never accessible to us. Voice input uses Apple's speech recognition, which is governed by Apple's privacy policy.
-          </p>
+      <h2>Age Requirement</h2>
+      <p>
+        Smartly AI is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13.
+      </p>
 
-          <h2>Notifications</h2>
-          <p>
-            If you start a free trial, Anychef can schedule a local reminder on your device before the trial ends. This notification is created and delivered entirely on your device; no notification data is sent to us.
-          </p>
+      <h2>Your Choices</h2>
+      <p>
+        You can clear your history in the app or delete the app to remove all local data. You can limit ad measurement in your iOS privacy settings. To ask us to delete a report you submitted, email us at the address below.
+      </p>
 
-          <h2>Data Storage and Security</h2>
-          <p>
-            Your pantry, recipes, meal plans, grocery lists, and preferences are stored locally on your device. Data sent for AI processing is transmitted securely over HTTPS, processed in real time, and not retained by the third-party service. The anonymous counters described above are stored in Cloudflare's key-value storage and expire automatically. If you delete the app, all locally stored data is permanently removed.
-          </p>
+      <!-- ───────────────────────────────────────────── -->
+      <hr />
 
-          <h2>Analytics and Advertising</h2>
-          <p>
-            We do not use third-party analytics tools. We do not display advertisements in this app. We do not use your data for advertising, marketing, or cross-app tracking of any kind.
-          </p>
+      <h2 class="app-title" id="photopin">Photopin</h2>
+      <p class="muted" style="margin-bottom:20px;">Explore, unlock your map, and share photos with groups</p>
 
-          <h2>Age Requirement</h2>
-          <p>
-            Anychef is intended for users of all ages. We do not collect any personally identifiable information from any user, including children under 13.
-          </p>
+      <h2>The Short Version</h2>
+      <p>
+        Photopin uses your location to unlock map tiles as you explore, to record trips, and to pin your photos to a map. You can use the map, tiles, trips, and photos without an account, and that data stays on your device. If you sign in to create or join a group, your profile, your tile count, and any photos you share to a group are stored on our servers so other group members can see them.
+      </p>
 
-          <h2>Your Choices and Rights</h2>
-          <p>
-            We hold no account, profile, or content for you, so there is nothing on our end tied to your identity to export or correct. Everything you create lives on your device and is permanently removed when you delete the app. The anonymous counters described above expire on their own — within an hour, a month, or a year depending on the counter — and contain no personal information.
-          </p>
-          <p style="margin-top:12px;">
-            If you are in a jurisdiction with data-protection rights (such as the EEA, UK, or California) and want to exercise them, or you simply want a record removed sooner, email us at
-            <a href="mailto:get.smartlyai@gmail.com">get.smartlyai@gmail.com</a> and we will help. We do not sell personal information, and we have no personal information to sell.
-          </p>
+      <h2>Information We Collect</h2>
+      <p>
+        <strong>Location:</strong> Photopin uses your device's location to unlock map tiles, record trips, and attach a location to the photos you take or import. If you allow "Always" location access, Photopin keeps doing this in the background while the app is closed. Your location history, unlocked tiles, and trips are stored only on your device and are never uploaded. The only location data that leaves your device is the location of photos you share to a group (see below), and only the total number of tiles you have unlocked is uploaded, not where they are.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Place Names:</strong> To label a photo with a place name, the photo's coordinates are sent to Apple's geocoding service, which follows Apple's privacy policy.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Photos:</strong> Photos you take or import are stored on your device. A photo is uploaded only when you share it to a group. In that case we store the image, its coordinates, its place name, and the group it was shared to.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Account Information (optional):</strong> You need an account only for group features. When you sign in with Apple or Google, we store your name, email address, a unique user ID, and the date your account was created. If you use Sign in with Apple, you can choose to hide your real email address.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Profile and Group Data:</strong> For signed-in users, we store your display name, avatar color, total unlocked tile count (used for group leaderboards), the groups you create or join, each group's name and invite code, and the photos shared to each group.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Local Data:</strong> Your photos, trips, unlocked tiles, location history, and settings are stored on your device.
+      </p>
 
-          <hr />
+      <h2>How We Use Your Information</h2>
+      <ul style="margin-top:8px;">
+        <li>Unlock tiles and record trips on your map</li>
+        <li>Pin your photos to the places they were taken</li>
+        <li>Create and manage your account</li>
+        <li>Show shared photos and leaderboards to members of your groups</li>
+      </ul>
 
-          <h2>Changes to This Policy</h2>
-          <p>
-            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.
-          </p>
+      <h2>What Other People Can See</h2>
+      <p>
+        Members of a group you join or create can see your display name, avatar color, and tile count on the group leaderboard. They can also see the photos you share to that group, with each photo's location and place name. Anyone with a group's invite code can join that group. Photopin does not show your email address to other users. Your trips, location history, and photos you have not shared are never visible to anyone else.
+      </p>
 
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions or concerns about this Privacy Policy, please contact us at:
-            <a href="mailto:get.smartlyai@gmail.com">get.smartlyai@gmail.com</a>
-          </p>
+      <h2>Third-Party Services</h2>
+      <ul style="margin-top:8px;">
+        <li><strong>Supabase</strong> hosts our database and photo storage for accounts, groups, and shared photos.</li>
+        <li><strong>Apple and Google</strong> provide sign-in, and they share your name and email address with us when you sign in. Apple also provides maps, place names, and subscriptions through StoreKit. We never see your payment information.</li>
+      </ul>
+      <p style="margin-top:12px;">
+        Photopin does not use analytics or advertising SDKs, does not show ads, and does not track you across other apps or websites. We do not sell your data.
+      </p>
+
+      <h2>Notifications</h2>
+      <p>
+        If you start a free trial and allow notifications, Photopin schedules a reminder on your device before the trial ends. No notification data is sent to us.
+      </p>
+
+      <h2>Data Retention and Deletion</h2>
+      <p>
+        We keep your account data while your account exists. You can delete your account at any time in Settings → Delete Account. This permanently deletes your profile, your group memberships, the groups you created, and the photos you uploaded from our servers, and it clears the app's data on your device. Signing out removes your account data from the device but keeps your local photos and trips. If you have trouble deleting your account, email us and we will do it for you.
+      </p>
+
+      <h2>Age Requirement</h2>
+      <p>
+        Photopin is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13.
+      </p>
+
+      <!-- ───────────────────────────────────────────── -->
+      <hr />
+
+      <h2 class="app-title" id="anychef">Anychef</h2>
+      <p class="muted" style="margin-bottom:20px;">Pantry-to-recipe cooking app</p>
+      <p>
+        Anychef's privacy policy is kept up to date at
+        <a href="https://anychefapp.com/privacy">anychefapp.com/privacy</a>.
+      </p>
+
+      <!-- ───────────────────────────────────────────── -->
+      <hr />
+
+      <h2>Your Rights</h2>
+      <p>
+        Depending on where you live (for example, the EEA, UK, or California), you may have the right to access, correct, or delete your personal information. To make a request, email us at the address below. We do not sell personal information.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of any of our apps after changes means you accept the revised policy.
+      </p>
+
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy, please contact us at:
+        <a href="mailto:get.smartlyai@gmail.com">get.smartlyai@gmail.com</a>
+      </p>
 
     </div>
   </section>
