@@ -50,7 +50,7 @@
 <main class="main">
   <section class="hero">
     <h1>Privacy Policy</h1>
-    <p class="muted" style="margin-top: 8px;">Effective Date: October 2, 2026</p>
+    <p class="muted" style="margin-top: 8px;">Effective Date: October 3, 2026</p>
 
     <div class="policy">
 
@@ -71,15 +71,24 @@
 
       <h2>The Short Version</h2>
       <p>
-        Smartly AI has no accounts and never asks for your name, email, or phone number. To solve a question, we send the photo or text of that question to an AI service through our own server. Your history, streaks, and settings stay on your device. The app also includes Meta and TikTok software that tells those companies when the app is installed, opened, or a free trial starts, so we can measure our ads. It never sends them your questions or photos.
+        Smartly AI has no accounts and never asks for your name, email, or phone number. To solve or grade your work, we send the photo or text of it to an AI service. If you start a voice revision session, what you say is sent to that AI service so it can talk back to you; we don't record or keep it. Your history, streaks, and settings stay on your device. The app also includes Meta and TikTok software that tells those companies when the app is installed, opened, or a free trial starts, so we can measure our ads. It never sends them your questions or photos.
       </p>
 
       <h2>Information We Collect</h2>
       <p>
-        <strong>Homework Photos and Questions:</strong> When you scan or upload a question, the area of the photo you crop is sent to a third-party AI service (OpenAI) through our server to read the question and generate an answer, step-by-step explanation, and practice questions. Questions you type, follow-up questions you ask, and the grade level you choose are sent the same way. This content is used only to answer your question.
+        <strong>Homework Photos and Questions:</strong> When you scan or upload a question, the area of the photo you crop is sent to a third-party AI service through our server to read the question and generate an answer, step-by-step explanation, and practice questions. Questions you type, follow-up questions you ask, and the grade level you choose are sent the same way. This content is used only to answer your question.
       </p>
       <p style="margin-top:12px;">
-        <strong>App Identifier:</strong> On first launch, the app creates a random identifier and stores it on your device. It is sent with each question so we can enforce usage limits and prevent abuse. It is not linked to your name, email, Apple ID, or the advertising identifier.
+        <strong>Grading:</strong> When you grade homework, the photo of the whole page is sent to our AI provider through our server to check your answers. When you grade an essay, the app reads the text on your device (from a photo, PDF, or text file) and sends only the text, along with your grade level, to our AI provider through our server. The photo of an essay stays on your device. The result includes an estimate of whether the writing sounds AI-generated; part of that check runs on your device. Grades are shown on your device and are not kept on our server.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Voice Revision Sessions:</strong> If you tap Start revision and allow microphone access, the app streams your voice to our AI provider while the session is open so it can respond out loud in real time. Your essay, its grade, and your feedback are also sent so the session is about your work. Our server only provides a short-lived access key for the session; your voice goes directly from your device to our AI provider and does not pass through our server. What you say is turned into text so it appears on your screen. The microphone is used only during a session, and we do not record, store, or listen to your voice.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>Speech Recognition and Spoken Feedback:</strong> If a live session isn't available, the app uses Apple's speech recognition to turn what you say into text. It runs on your device when your iPhone supports it; otherwise Apple processes the audio under Apple's privacy policy. That text is then sent to our AI provider through our server to generate a reply. When the app reads feedback out loud (for example, "Hear the roast"), the text being read is sent to our AI provider through our server to create the audio.
+      </p>
+      <p style="margin-top:12px;">
+        <strong>App Identifier:</strong> On first launch, the app creates a random identifier and stores it on your device. It is sent with each question, grade, and voice session request so we can enforce usage limits and prevent abuse. It is not linked to your name, email, Apple ID, or the advertising identifier.
       </p>
       <p style="margin-top:12px;">
         <strong>Reports:</strong> If you report an answer, we receive and keep the report so we can review it and improve answers. A report includes the report type, the question text, the AI's answer and steps, your grade level, the app version, your device model (for example, "iPhone 15"), and your iOS version. Reports do not include your photo or your app identifier.
@@ -98,11 +107,11 @@
 
       <h2>Third-Party Services</h2>
       <ul style="margin-top:8px;">
-        <li><strong>OpenAI</strong> answers your questions. It receives the question content described above through our server.</li>
-        <li><strong>Cloudflare</strong> hosts our server, which forwards your questions and receives reports.</li>
+        <li><strong>Our AI provider</strong> answers your questions, grades your work, runs voice revision sessions, and creates spoken feedback. It receives the content described above. Under its terms, this data is not used to train AI models, and it may be kept for up to 30 days to monitor for abuse.</li>
+        <li><strong>Cloudflare</strong> hosts our server, which forwards your questions and grades, issues voice session keys, and receives reports.</li>
         <li><strong>Meta and TikTok</strong> handle advertising measurement, as described above.</li>
         <li><strong>jsDelivr</strong> serves the math formatting library (KaTeX) used to display equations. Like any website, it receives your IP address when it loads.</li>
-        <li><strong>Apple</strong> processes subscriptions through StoreKit. We never see your payment information.</li>
+        <li><strong>Apple</strong> processes subscriptions through StoreKit (we never see your payment information) and provides speech recognition when it can't run on your device.</li>
       </ul>
 
       <h2>Notifications</h2>
