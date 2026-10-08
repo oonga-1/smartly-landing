@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Join my map on Photopin</title>
+  <meta name="description" content="You're invited to a shared Photopin map: one map of every photo you and your friends take." />
+  <meta name="robots" content="noindex" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Photopin" />
+  <meta property="og:title" content="Join my map on Photopin" />
+  <meta property="og:description" content="One shared map of every photo we take, wherever we go." />
+  <meta property="og:image" content="https://smartlyai.app/assets/photopin-invite.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #ffffff; --ink: #1a221a; --soft: #5a605a; --line: #e4e6e4; --chip: #f3f4f3;
+      --btn: #111312; --btn-ink: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0a0a12; --ink: #f4f5f4; --soft: #a3a8a3; --line: #262833; --chip: #161824;
+        --btn: #ffffff; --btn-ink: #0a0a12;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh; display: flex; justify-content: center;
+    }
+    main { width: 100%; max-width: 440px; padding: 48px 16px 40px; display: flex; flex-direction: column; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; }
+    .brand svg { width: 26px; height: 26px; }
+    h1 { font-size: 36px; line-height: 1.1; margin: 20px 0 0; letter-spacing: -0.5px; }
+    p { color: var(--soft); font-size: 17px; line-height: 1.45; margin: 0; }
+    .code {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--chip); border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px;
+    }
+    .code small { display: block; color: var(--soft); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    .code strong { font: 700 28px ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 0.04em; }
+    .copy { border: 0; background: transparent; color: var(--ink); font-weight: 600; font-size: 15px; cursor: pointer; padding: 8px; }
+    .btn {
+      display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 18px;
+      border-radius: 18px; padding: 18px; border: 0; cursor: pointer; width: 100%;
+    }
+    .primary { background: var(--btn); color: var(--btn-ink); }
+    .secondary { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+    .gift { display: flex; gap: 10px; align-items: center; font-size: 15px; color: var(--soft); }
+    ol { color: var(--soft); font-size: 15px; line-height: 1.6; padding-left: 20px; margin: 4px 0 0; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 5.6 6.6 11.3 7.3 11.8a1.1 1.1 0 0 0 1.4 0C13.4 21.3 20 15.6 20 10a8 8 0 0 0-8-8Zm0 4.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6Z"/></svg>
+      Photopin
+    </div>
+
+    <h1>You're invited to a shared map</h1>
+    <p>Photopin puts every photo on a real map. Join your friend's group and every photo you all take lands on one map together.</p>
+
+    <div class="code" id="codeBox">
+      <div><small>Group code</small><strong id="code">——</strong></div>
+      <button class="copy" id="copy" type="button">Copy</button>
+    </div>
+
+    <button class="btn primary" id="open" type="button">Open in Photopin</button>
+    <a class="btn secondary" id="store" href="https://apps.apple.com/app/id6762124275">Get Photopin, free</a>
+
+    <div class="gift">🎁 You both get 10 free uploads when you join.</div>
+
+    <ol>
+      <li>Get Photopin from the App Store.</li>
+      <li>Come back here and tap <b>Open in Photopin</b>, or tap <b>Got an invite from a friend?</b> in the app and paste the code.</li>
+    </ol>
+  </main>
+
+  <script>
+    (function () {
+      var raw = new URLSearchParams(location.search).get("c") || "";
+      var hex = raw.toUpperCase().replace(/[^0-9A-F]/g, "");
+      var code = hex.length === 6 ? hex.slice(0, 3) + "-" + hex.slice(3) : "";
+      var codeEl = document.getElementById("code");
+      if (code) { codeEl.textContent = code; } else { document.getElementById("codeBox").classList.add("hidden"); }
+
+      function copyCode() {
+        if (!code || !navigator.clipboard) return Promise.resolve();
+        return navigator.clipboard.writeText(code).catch(function () {});
+      }
+
+      document.getElementById("copy").addEventListener("click", function () {
+        copyCode().then(function () { document.getElementById("copy").textContent = "Copied"; });
+      });
+
+      // Copy the code on the way to the App Store, so it is on the clipboard
+      // for the app's paste button after install.
+      document.getElementById("store").addEventListener("click", function () { copyCode(); });
+
+      // Try the app; if the page is still in front a moment later, the app
+      // isn't installed, so go to the App Store instead.
+      document.getElementById("open").addEventListener("click", function () {
+        copyCode();
+        var target = code ? "photopin://join/" + code : "photopin://";
+        var left = false;
+        document.addEventListener("visibilitychange", function () { if (document.hidden) left = true; }, { once: true });
+        location.href = target;
+        setTimeout(function () { if (!left) location.href = document.getElementById("store").href; }, 1400);
+      });
+    })();
+  </script>
+</body>
+</html>
